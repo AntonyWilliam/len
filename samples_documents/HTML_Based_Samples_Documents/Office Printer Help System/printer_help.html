@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Office Printer Help System</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f8f8f8;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    header {
+      background-color: #cc0000;
+      color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    h2 {
+      color: #cc0000;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+    h3 {
+      color: #cc0000;
+    }
+    .topic {
+      margin-bottom: 30px;
+    }
+    .note {
+      background-color: #f0f0f0;
+      border-left: 4px solid #cc0000;
+      padding: 10px;
+      margin: 15px 0;
+    }
+    .warning {
+      background-color: #fff0f0;
+      border-left: 4px solid #cc0000;
+      padding: 10px;
+      margin: 15px 0;
+    }
+    .procedure {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #eee;
+    }
+    .procedure h4 {
+      margin-top: 0;
+      color: #333;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+      font-size: 0.8em;
+      color: #666;
+      text-align: center;
+    }
+    .toc {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #eee;
+    }
+    .toc ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .error-code {
+      font-family: monospace;
+      background-color: #f0f0f0;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Office Printer Help System</h1>
+      <p>Model XP-5000 Series - Version 2.1</p>
+    </header>
+
+    <div class="toc">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#setup">Printer Setup</a></li>
+        <li><a href="#printing">Print Job Management</a></li>
+        <li><a href="#network">Network Connectivity</a></li>
+        <li><a href="#consumables">Consumables Replacement</a></li>
+        <li><a href="#errors">Error Messages</a></li>
+        <li><a href="#maintenance">Maintenance</a></li>
+      </ul>
+    </div>
+
+    <div id="setup" class="topic">
+      <h2>Printer Setup</h2>
+      
+      <div class="note">
+        <p><strong>Note:</strong> Before beginning setup, ensure you have removed all packaging materials and tape from the printer.</p>
+      </div>
+      
+      <h3>Initial Hardware Setup</h3>
+      <div class="procedure">
+        <h4>Unpacking and Assembly</h4>
+        <ol>
+          <li>Remove the printer from the box and place it on a flat, stable surface.</li>
+          <li>Remove all blue tape and packaging materials from the exterior and interior of the printer.</li>
+          <li>Open the top cover and remove the protective materials from the print head assembly.</li>
+          <li>Close the top cover.</li>
+        </ol>
+      </div>
+      
+      <div class="procedure">
+        <h4>Installing Ink Cartridges</h4>
+        <ol>
+          <li>Press the Power button to turn on the printer.</li>
+          <li>When prompted on the control panel, open the ink cartridge access door.</li>
+          <li>Remove each ink cartridge from its package.</li>
+          <li>Remove the protective tape from each cartridge, taking care not to touch the metal contacts.</li>
+          <li>Insert each cartridge into its color-coded slot until it clicks into place.</li>
+          <li>Close the ink cartridge access door.</li>
+          <li>Wait for the printer to initialize the ink system (approximately 5 minutes).</li>
+        </ol>
+      </div>
+      
+      <h3>Software Installation</h3>
+      <div class="procedure">
+        <h4>Installing Printer Software</h4>
+        <ol>
+          <li>Insert the software CD into your computer's CD drive.</li>
+          <li>Follow the on-screen instructions to install the printer software.</li>
+          <li>When prompted, select your connection type (USB or network).</li>
+          <li>Complete the installation process by following the remaining on-screen instructions.</li>
+        </ol>
+      </div>
+      
+      <div class="note">
+        <p>If your computer does not have a CD drive, you can download the printer software from www.printerwebsite.com/support/xp5000.</p>
+      </div>
+    </div>
+
+    <div id="printing" class="topic">
+      <h2>Print Job Management</h2>
+      
+      <h3>Basic Printing</h3>
+      <div class="procedure">
+        <h4>Printing a Document</h4>
+        <ol>
+          <li>Open the document you want to print.</li>
+          <li>Select File > Print from the application menu.</li>
+          <li>Select the XP-5000 printer from the printer list.</li>
+          <li>Adjust print settings as needed (paper size, quality, color options).</li>
+          <li>Click Print to send the job to the printer.</li>
+        </ol>
+      </div>
+      
+      <h3>Print Queue Management</h3>
+      <p>You can manage print jobs that have been sent to the printer using the print queue:</p>
+      <div class="procedure">
+        <h4>Accessing the Print Queue</h4>
+        <ol>
+          <li>Windows: Click the printer icon in the system tray, or go to Control Panel > Devices and Printers, then double-click the XP-5000 printer.</li>
+          <li>Mac: Click the printer icon in the Dock, or go to System Preferences > Printers & Scanners, select XP-5000, then click Open Print Queue.</li>
+        </ol>
+      </div>
+      
+      <div class="procedure">
+        <h4>Managing Print Jobs</h4>
+        <p>From the print queue, you can:</p>
+        <ul>
+          <li>View the status of current print jobs</li>
+          <li>Pause individual print jobs</li>
+          <li>Resume paused print jobs</li>
+          <li>Cancel print jobs</li>
+          <li>Reorder pending print jobs (administrator only)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="network" class="topic">
+      <h2>Network Connectivity</h2>
+      
+      <h3>Wireless Setup</h3>
+      <div class="procedure">
+        <h4>Connecting to a Wi-Fi Network</h4>
+        <ol>
+          <li>On the printer control panel, press the Home button.</li>
+          <li>Select Setup > Network Setup > Wireless Setup.</li>
+          <li>Select Wireless Setup Wizard.</li>
+          <li>Choose your wireless network name (SSID) from the list.</li>
+          <li>Enter your wireless network password when prompted.</li>
+          <li>Press OK to complete the connection process.</li>
+        </ol>
+      </div>
+      
+      <div class="warning">
+        <p><strong>Important:</strong> The printer must be within range of your wireless router during setup and operation.</p>
+      </div>
+      
+      <h3>Wired (Ethernet) Setup</h3>
+      <div class="procedure">
+        <h4>Connecting to a Wired Network</h4>
+        <ol>
+          <li>Connect an Ethernet cable to the printer's Ethernet port.</li>
+          <li>Connect the other end of the cable to an available port on your router or network switch.</li>
+          <li>On the printer control panel, press the Home button.</li>
+          <li>Select Setup > Network Setup > Ethernet Setup.</li>
+          <li>Select Enable Ethernet to activate the connection.</li>
+        </ol>
+      </div>
+      
+      <h3>Troubleshooting Network Issues</h3>
+      <div class="procedure">
+        <h4>Network Connectivity Problems</h4>
+        <p>If the printer cannot connect to the network:</p>
+        <ol>
+          <li>Verify that your network is functioning correctly by connecting another device.</li>
+          <li>Ensure the printer is within range of the wireless router (for Wi-Fi connections).</li>
+          <li>Check that you entered the correct network password (for Wi-Fi connections).</li>
+          <li>Restart your router, wait 60 seconds, then restart your printer.</li>
+          <li>Print a network configuration report (Setup > Reports > Network Configuration) to verify network settings.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div id="consumables" class="topic">
+      <h2>Consumables Replacement</h2>
+      
+      <h3>Replacing Ink Cartridges</h3>
+      <div class="procedure">
+        <h4>When to Replace Ink Cartridges</h4>
+        <p>Replace ink cartridges when:</p>
+        <ul>
+          <li>The printer control panel displays a "Low Ink" or "Replace Cartridge" message.</li>
+          <li>Print quality noticeably decreases (faded prints, missing colors).</li>
+          <li>The ink level indicator shows a cartridge is nearly empty.</li>
+        </ul>
+      </div>
+      
+      <div class="procedure">
+        <h4>Replacing an Ink Cartridge</h4>
+        <ol>
+          <li>Ensure the printer is turned on.</li>
+          <li>Open the ink cartridge access door.</li>
+          <li>Press the tab on the cartridge to release it, then pull it out of the slot.</li>
+          <li>Remove the new cartridge from its packaging.</li>
+          <li>Remove the protective tape from the new cartridge.</li>
+          <li>Insert the new cartridge into the same slot until it clicks into place.</li>
+          <li>Close the ink cartridge access door.</li>
+        </ol>
+      </div>
+      
+      <div class="warning">
+        <p><strong>Warning:</strong> Do not leave ink cartridge slots empty for an extended period. This may cause the print head to dry out and become damaged.</p>
+      </div>
+      
+      <h3>Loading Paper</h3>
+      <div class="procedure">
+        <h4>Loading Paper in the Main Tray</h4>
+        <ol>
+          <li>Remove the paper tray from the printer.</li>
+          <li>Adjust the paper width guides to match your paper size.</li>
+          <li>Load paper into the tray with the print side facing down.</li>
+          <li>Ensure the paper is flat and does not exceed the maximum fill line.</li>
+          <li>Slide the paper tray back into the printer until it clicks into place.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div id="errors" class="topic">
+      <h2>Error Messages</h2>
+      
+      <h3>Common Error Codes</h3>
+      <table>
+        <tr>
+          <th>Error Code</th>
+          <th>Description</th>
+          <th>Solution</th>
+        </tr>
+        <tr>
+          <td class="error-code">E01</td>
+          <td>Paper jam</td>
+          <td>Open the printer cover and carefully remove any jammed paper. Check the paper path for torn pieces.</td>
+        </tr>
+        <tr>
+          <td class="error-code">E02</td>
+          <td>Out of paper</td>
+          <td>Load paper into the paper tray, then press OK on the control panel.</td>
+        </tr>
+        <tr>
+          <td class="error-code">E03</td>
+          <td>Ink cartridge error</td>
+          <td>Open the ink cartridge door and reseat the indicated cartridge. Replace if necessary.</td>
+        </tr>
+        <tr>
+          <td class="error-code">E04</td>
+          <td>Print head alignment error</td>
+          <td>Run the print head alignment utility from the printer control panel (Setup > Maintenance > Print Head Alignment).</td>
+        </tr>
+        <tr>
+          <td class="error-code">E05</td>
+          <td>Print head movement obstructed</td>
+          <td>Turn off the printer, open the top cover, and remove any obstructions from the print head path.</td>
+        </tr>
+        <tr>
+          <td class="error-code">E06</td>
+          <td>Network connection error</td>
+          <td>Check your network connection settings and ensure your router is functioning properly.</td>
+        </tr>
+      </table>
+      
+      <div class="note">
+        <p>For error codes not listed here, consult the comprehensive error code guide in the user manual or contact technical support.</p>
+      </div>
+    </div>
+
+    <div id="maintenance" class="topic">
+      <h2>Maintenance</h2>
+      
+      <h3>Routine Maintenance Tasks</h3>
+      <div class="procedure">
+        <h4>Print Head Cleaning</h4>
+        <p>Clean the print head when print quality decreases:</p>
+        <ol>
+          <li>On the printer control panel, press the Home button.</li>
+          <li>Select Setup > Maintenance > Print Head Cleaning.</li>
+          <li>Follow the on-screen instructions to complete the cleaning process.</li>
+          <li>Print a test page to verify print quality has improved.</li>
+        </ol>
+        <p>Note: Print head cleaning uses ink, so only run when necessary.</p>
+      </div>
+      
+      <div class="procedure">
+        <h4>Print Head Alignment</h4>
+        <p>Align the print head after replacing cartridges or if text appears misaligned:</p>
+        <ol>
+          <li>Load plain white paper in the main paper tray.</li>
+          <li>On the printer control panel, press the Home button.</li>
+          <li>Select Setup > Maintenance > Print Head Alignment.</li>
+          <li>Follow the on-screen instructions to complete the alignment process.</li>
+        </ol>
+      </div>
+      
+      <h3>Maintenance Schedule</h3>
+      <table>
+        <tr>
+          <th>Maintenance Task</th>
+          <th>Frequency</th>
+        </tr>
+        <tr>
+          <td>Clean exterior of printer</td>
+          <td>Monthly</td>
+        </tr>
+        <tr>
+          <td>Print head cleaning</td>
+          <td>As needed (when print quality decreases)</td>
+        </tr>
+        <tr>
+          <td>Print head alignment</td>
+          <td>After replacing cartridges or as needed</td>
+        </tr>
+        <tr>
+          <td>Clean paper feed rollers</td>
+          <td>Every 3 months or after 1,000 pages</td>
+        </tr>
+        <tr>
+          <td>Check ink levels</td>
+          <td>Weekly</td>
+        </tr>
+        <tr>
+          <td>Update printer firmware</td>
+          <td>When updates are available</td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <p>Office Printer Help System &copy; 2008 PrintCorp Inc. All rights reserved.</p>
+      <p>Document ID: XP5000-HELP-v2.1</p>
+    </footer>
+  </div>
+</body>
+</html>
