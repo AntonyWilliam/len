@@ -1,0 +1,1 @@
+link of the doc: https://www.intel.com/content/www/us/en/developer/topic-technology/firmware/overview.html

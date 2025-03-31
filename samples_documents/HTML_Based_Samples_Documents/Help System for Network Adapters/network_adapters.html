@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Network Adapter Help System</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Verdana, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    h2 {
+      color: #003366;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+    h3 {
+      color: #003366;
+      font-size: 16px;
+    }
+    .topic {
+      margin-bottom: 30px;
+    }
+    .note {
+      background-color: #ffffcc;
+      border-left: 4px solid #ffcc00;
+      padding: 10px;
+      margin: 15px 0;
+    }
+    .warning {
+      background-color: #ffeeee;
+      border-left: 4px solid #cc0000;
+      padding: 10px;
+      margin: 15px 0;
+    }
+    .steps {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .steps ol {
+      margin-top: 5px;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+      font-size: 0.8em;
+      color: #666;
+      text-align: center;
+    }
+    .toc {
+      background-color: #f0f0f0;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .toc ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Network Adapter Help System</h1>
+      <p>Version 3.2 - January 2005</p>
+    </header>
+
+    <div class="toc">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#installation">Driver Installation</a></li>
+        <li><a href="#configuration">Network Configuration</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+        <li><a href="#advanced">Advanced Settings</a></li>
+        <li><a href="#support">Technical Support</a></li>
+      </ul>
+    </div>
+
+    <div id="introduction" class="topic">
+      <h2>Introduction</h2>
+      <p>This help system provides comprehensive information for installing, configuring, and troubleshooting your network adapter. The information in this guide applies to the following network adapter models:</p>
+      <ul>
+        <li>FastEthernet PC3000</li>
+        <li>GigaLink GL5000</li>
+        <li>WirelessPro WP2000</li>
+        <li>DualBand DBX1000</li>
+      </ul>
+      <p>The network adapter drivers are compatible with the following operating systems:</p>
+      <ul>
+        <li>Windows XP</li>
+        <li>Windows 2000</li>
+        <li>Windows Server 2003</li>
+        <li>Linux Kernel 2.4.x and higher</li>
+      </ul>
+    </div>
+
+    <div id="installation" class="topic">
+      <h2>Driver Installation</h2>
+      
+      <div class="note">
+        <p><strong>Note:</strong> Before beginning installation, ensure you have administrative privileges on your computer.</p>
+      </div>
+      
+      <h3>Windows Installation</h3>
+      <div class="steps">
+        <p><strong>To install the network adapter driver on Windows:</strong></p>
+        <ol>
+          <li>Insert the driver CD into your CD-ROM drive.</li>
+          <li>If AutoPlay is enabled, the installation program will start automatically. If not, navigate to the CD-ROM drive and double-click on <strong>setup.exe</strong>.</li>
+          <li>Follow the on-screen instructions to complete the installation.</li>
+          <li>When prompted, connect the network adapter to your computer.</li>
+          <li>Restart your computer when prompted to complete the installation.</li>
+        </ol>
+      </div>
+      
+      <h3>Linux Installation</h3>
+      <div class="steps">
+        <p><strong>To install the network adapter driver on Linux:</strong></p>
+        <ol>
+          <li>Extract the driver package to a directory on your hard drive:
+            <pre>tar -xzvf netadapter-linux-3.2.tar.gz</pre>
+          </li>
+          <li>Navigate to the extracted directory:
+            <pre>cd netadapter-linux-3.2</pre>
+          </li>
+          <li>Compile the driver:
+            <pre>make</pre>
+          </li>
+          <li>Install the driver:
+            <pre>sudo make install</pre>
+          </li>
+          <li>Load the driver module:
+            <pre>sudo modprobe netadapter</pre>
+          </li>
+        </ol>
+      </div>
+      
+      <div class="warning">
+        <p><strong>Warning:</strong> Do not disconnect the network adapter during driver installation. Doing so may cause the installation to fail and could potentially damage your adapter.</p>
+      </div>
+    </div>
+
+    <div id="configuration" class="topic">
+      <h2>Network Configuration</h2>
+      
+      <h3>Basic Network Settings</h3>
+      <p>After installing the driver, you need to configure your network settings:</p>
+      
+      <div class="steps">
+        <p><strong>To configure basic network settings in Windows:</strong></p>
+        <ol>
+          <li>Open the Control Panel.</li>
+          <li>Click on Network Connections.</li>
+          <li>Right-click on the network adapter and select Properties.</li>
+          <li>Select Internet Protocol (TCP/IP) and click Properties.</li>
+          <li>Configure your IP address settings as appropriate for your network.</li>
+          <li>Click OK to save your settings.</li>
+        </ol>
+      </div>
+      
+      <h3>Advanced Network Settings</h3>
+      <p>The network adapter driver provides several advanced settings that can be configured to optimize performance:</p>
+      <ul>
+        <li><strong>Speed & Duplex:</strong> Configure the connection speed and duplex mode.</li>
+        <li><strong>Wake on LAN:</strong> Enable or disable the ability to power on the computer remotely.</li>
+        <li><strong>Flow Control:</strong> Enable or disable packet flow control.</li>
+        <li><strong>Jumbo Frames:</strong> Configure support for jumbo frames to improve performance on gigabit networks.</li>
+      </ul>
+    </div>
+
+    <div id="troubleshooting" class="topic">
+      <h2>Troubleshooting</h2>
+      
+      <h3>Common Issues</h3>
+      
+      <div class="steps">
+        <p><strong>No network connectivity:</strong></p>
+        <ol>
+          <li>Check that the network cable is securely connected to both the adapter and the network port.</li>
+          <li>Verify that the link light on the adapter is illuminated.</li>
+          <li>Ensure the driver is properly installed by checking Device Manager.</li>
+          <li>Try using a different network cable or port.</li>
+          <li>Restart your computer.</li>
+        </ol>
+      </div>
+      
+      <div class="steps">
+        <p><strong>Slow network performance:</strong></p>
+        <ol>
+          <li>Check that you are using the latest driver version.</li>
+          <li>Verify that the Speed & Duplex settings match your network infrastructure.</li>
+          <li>Disable any unnecessary protocols in the adapter properties.</li>
+          <li>Check for interference if using a wireless adapter.</li>
+          <li>Run network diagnostics to identify bottlenecks.</li>
+        </ol>
+      </div>
+      
+      <h3>Diagnostic Tools</h3>
+      <p>The adapter software includes several diagnostic tools to help identify and resolve issues:</p>
+      <ul>
+        <li><strong>Link Test:</strong> Tests the connection between your adapter and the network.</li>
+        <li><strong>Packet Monitor:</strong> Monitors packet transmission and reception.</li>
+        <li><strong>Hardware Diagnostics:</strong> Tests the hardware functionality of the adapter.</li>
+        <li><strong>Driver Verifier:</strong> Verifies the proper operation of the driver.</li>
+      </ul>
+    </div>
+
+    <div id="advanced" class="topic">
+      <h2>Advanced Settings</h2>
+      
+      <h3>Performance Optimization</h3>
+      <p>To optimize your network adapter performance:</p>
+      <ul>
+        <li>Update to the latest driver version.</li>
+        <li>Configure the adapter to match your network speed (10/100/1000 Mbps).</li>
+        <li>Enable full-duplex mode if supported by your network.</li>
+        <li>Adjust the transmit and receive buffers for high-performance applications.</li>
+        <li>Enable offload features (TCP checksum, large send offload) when available.</li>
+      </ul>
+      
+      <h3>Multiple Adapter Configuration</h3>
+      <p>When using multiple network adapters in a single system:</p>
+      <ul>
+        <li>Configure each adapter with a unique IP address on a separate subnet.</li>
+        <li>Use Windows advanced routing to control traffic between adapters.</li>
+        <li>Consider teaming compatible adapters for fault tolerance or load balancing.</li>
+      </ul>
+    </div>
+
+    <div id="support" class="topic">
+      <h2>Technical Support</h2>
+      <p>If you encounter issues not addressed in this help system, please contact our technical support team:</p>
+      <ul>
+        <li>Online Support: www.networkadapters.com/support</li>
+        <li>Email Support: support@networkadapters.com</li>
+        <li>Phone Support: 1-800-555-NETS (Monday-Friday, 8am-5pm PST)</li>
+      </ul>
+      <p>When contacting support, please have the following information ready:</p>
+      <ul>
+        <li>Network adapter model number</li>
+        <li>Driver version</li>
+        <li>Operating system version</li>
+        <li>Detailed description of the issue</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Network Adapter Help System &copy; 2005 Network Technologies Inc. All rights reserved.</p>
+      <p>Document ID: NA-HELP-3.2-01052005</p>
+    </footer>
+  </div>
+</body>
+</html>
